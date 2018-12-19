@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.Lib.Models
 {
-    public class Yazar:Kisi
+   public class KitapAlim
     {
-        
-        public Turler turler { get; set; }
+        public Ogrenci Ogrenci { get; set; }
 
-        public List<Kitap> kitaplar { get; set; } = new List<Kitap>();
+        public Yazar Yazar { get; set; }
+
+        public int Sure { get; set; }
     }
 }

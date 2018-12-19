@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\YazarBusiness.cs" />
+    <Compile Include="Data\SimData.cs" />
+    <Compile Include="Data\States.cs" />
+    <Compile Include="Models\IAtama.cs" />
     <Compile Include="Models\Kisi.cs" />
+    <Compile Include="Models\Kitap.cs" />
+    <Compile Include="Models\KitapAlim.cs" />
     <Compile Include="Models\Ogrenci.cs" />
     <Compile Include="Models\Yazar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,7 +8,7 @@ namespace Kutuphane.Lib.Models
 {
     public class Ogrenci : Kisi
     {
-        private string Telefon { get; set; }
-        private string TCKN { get; set; }
+        public string Telefon { get; set; }
+        public string TCKN { get; set; }
     }
 }

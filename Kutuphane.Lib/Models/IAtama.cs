@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Kutuphane.Lib.Models
 {
-    public class Yazar:Kisi
+    public interface  IAtama<T1,T2> where T1:Kisi where T2:Kitap
     {
-        
-        public Turler turler { get; set; }
-
-        public List<Kitap> kitaplar { get; set; } = new List<Kitap>();
+        void AtamaYap(T1 kime, T2 neyi);
     }
 }

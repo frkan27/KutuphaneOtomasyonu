@@ -8,9 +8,9 @@ namespace Kutuphane.Lib.Models
 {
     public abstract class Kisi
     {
-        private string Ad { get; set; }
-        private string Soyad { get; set; }
-        private DateTime DogumTarihi { get; set; }
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
+        public DateTime DogumTarihi { get; set; }
 
         public override string ToString()
         {
