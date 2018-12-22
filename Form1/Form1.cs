@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kutuphane.Lib.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace Form1
         public Form1()
         {
             InitializeComponent();
+        }
+        public static States states { get; set; }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

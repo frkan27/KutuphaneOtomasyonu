@@ -60,13 +60,13 @@
             // öğrenciKayıtToolStripMenuItem
             // 
             this.öğrenciKayıtToolStripMenuItem.Name = "öğrenciKayıtToolStripMenuItem";
-            this.öğrenciKayıtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öğrenciKayıtToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.öğrenciKayıtToolStripMenuItem.Text = "Öğrenci Kayıt";
             // 
             // kitapKayıtToolStripMenuItem
             // 
             this.kitapKayıtToolStripMenuItem.Name = "kitapKayıtToolStripMenuItem";
-            this.kitapKayıtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kitapKayıtToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.kitapKayıtToolStripMenuItem.Text = "Kitap Kayıt";
             // 
             // kitapİŞToolStripMenuItem
@@ -80,7 +80,7 @@
             // kitapAlToolStripMenuItem
             // 
             this.kitapAlToolStripMenuItem.Name = "kitapAlToolStripMenuItem";
-            this.kitapAlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kitapAlToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.kitapAlToolStripMenuItem.Text = "Kitap Al";
             // 
             // Form1
@@ -92,6 +92,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
