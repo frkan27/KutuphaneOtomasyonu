@@ -20,7 +20,7 @@ namespace Kutuphane.Lib.Data
                 States.Ogrenciler.Add(new Ogrenci()
                     {
 
-                    
+                    Ad=FakeData
                 });
 
             }

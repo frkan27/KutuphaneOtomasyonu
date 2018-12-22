@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +45,7 @@
     <Compile Include="Business\YazarBusiness.cs" />
     <Compile Include="Data\SimData.cs" />
     <Compile Include="Data\States.cs" />
+    <Compile Include="Helper\FormHelper.cs" />
     <Compile Include="Models\IAtama.cs" />
     <Compile Include="Models\Kisi.cs" />
     <Compile Include="Models\Kitap.cs" />
