@@ -1,4 +1,5 @@
-﻿using Kutuphane.Lib.Models;
+﻿using Kutuphane.Lib.Business;
+using Kutuphane.Lib.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,32 @@ namespace Form1
                 .OrderByDescending(x => x.AtandiMi).ToList();
             chklbKitaplar.DataSource = kitaplari;
 
+            for (int i = 0; i < kitaplari.Count; i++)
+            {
+                var ktp = kitaplari[i];
+                if(ktp.AtandiMi)
+                    chklbKitaplar.SetItemCheckState(i,CheckState.Checked)
+
+            }
+            lstYazarlar.DataSource = Form1.states.Yazarlar.
+                Where(x => x.turler == turler).
+                ToList();
+
+        }
+
+        private void btnKitapAta_Click(object sender, EventArgs e)
+        {
+            YazarBusiness yazarBusiness = new YazarBusiness();
+            Yazar yzr = lstYazarlar.SelectedItem as Yazar;
+            foreach ( object checkedItem in chklbKitaplar.CheckedItems)
+            {
+                Kitap ktp = checkedItem as Kitap;
+                    if (ktp.AtandiMi) continue;
+                yazarBusiness.AtamaYap(yzr, ktp);
+
+                    
+
+            }
         }
     }
 }
