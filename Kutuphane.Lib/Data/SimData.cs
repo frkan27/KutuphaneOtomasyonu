@@ -18,12 +18,36 @@ namespace Kutuphane.Lib.Data
             for (int i = 0; i < 10; i++)
             {
                 States.Ogrenciler.Add(new Ogrenci()
-                    {
+                {
+                    Ad = FakeData.NameData.GetFirstName(),
+                    Soyad = FakeData.NameData.GetSurname(),
+                    TCKN = FakeData.TextData.GetNumeric(11),
+                    Telefon = "5" + FakeData.TextData.GetNumeric(9),
+                    DogumTarihi = FakeData.DateTimeData.GetDatetime()
 
-                    Ad=FakeData
+
                 });
 
             }
-}
+            for (int i = 0; i < 10; i++)
+            {
+                States.Yazarlar.Add(new Yazar()
+                {
+                    Ad = FakeData.NameData.GetFirstName(),
+                    Soyad = FakeData.NameData.GetSurname(),
+                    turler = FakeData.EnumData.GetElement<Turler>()
+                });
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                States.Kitaplar.Add(new Kitap()
+                {
+                    KitapAdi = FakeData.NameData.GetFirstName(),
+                    YayinEvi = FakeData.NameData.GetSurname(),
+                    BasimYili = FakeData.DateTimeData.GetDatetime(),
+                    turler = FakeData.EnumData.GetElement<Turler>()
+                });
+            }
+        }
     }
 }

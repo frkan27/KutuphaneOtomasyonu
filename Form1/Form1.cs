@@ -18,9 +18,10 @@ namespace Form1
             InitializeComponent();
         }
         public static States states { get; set; }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            states = new SimData().States;
         }
     }
 }

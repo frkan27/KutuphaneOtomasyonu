@@ -37,8 +37,8 @@ namespace Form1
             for (int i = 0; i < kitaplari.Count; i++)
             {
                 var ktp = kitaplari[i];
-                if(ktp.AtandiMi)
-                    chklbKitaplar.SetItemCheckState(i,CheckState.Checked)
+                if (ktp.AtandiMi)
+                    chklbKitaplar.SetItemCheckState(i, CheckState.Checked);
 
             }
             lstYazarlar.DataSource = Form1.states.Yazarlar.

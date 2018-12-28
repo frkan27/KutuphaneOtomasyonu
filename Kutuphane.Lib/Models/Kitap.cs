@@ -9,7 +9,7 @@ namespace Kutuphane.Lib.Models
     public class Kitap
     {
         public string KitapAdi { get; set; }
-        public string BasimYili { get; set; }
+        public DateTime BasimYili { get; set; }
 
         public string YayinEvi { get; set; }
 
